@@ -1,0 +1,596 @@
+
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google IO 2012</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+
+    <hgroup class="auto-fadein">
+      <h1 data-config-title></h1>
+      <h2 data-config-subtitle></h2>
+      <p data-config-presenter></p>
+    </hgroup>
+  </slide>
+
+  <slide class="about-slide">
+    <hgroup>
+      <h2>Hi there</h2>
+    </hgroup>
+
+    <img src="images/zyb.png" class="zyb">
+    <img src="images/vodafone.png" class="vodafone">
+    <img src="images/cphjs.png" class="cphjs">
+    <img src="images/podio.png" class="podio">
+    <img src="images/citrix.png" class="citrix">
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>I'm NOT affiliated with any browser vendor.</li>
+          <li>REGULAR frontend developer</li>
+        </ul>
+        <p><b>FREEDOM</b></p>
+      </section>
+    </aside>
+
+
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="images/html5-logo.png" alt="Description" title="Description">
+      <footer class="source">W3C</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>When you hear HTML5 you think...</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/supercar.png" alt="Description" title="Description">
+      <footer class="source">http://cemagraphics.deviantart.com</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Because of the this.</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/hypecycle.png" alt="Description" title="Description">
+      <footer class="source">http://en.wikipedia.org/wiki/Hype_cycle</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Is much more than this spec...</h2>
+    </hgroup>
+    <article>
+      <iframe data-src="http://www.w3.org/TR/html5/"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="images/html5-tagcloud.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="images/W3C_logo.jpg" alt="Description" title="Description" style="margin-right: 100px ">
+      <img src="images/whatwg-logo.png" alt="Description" title="Description" style=" ">
+      <footer class="source">W3C & WHATWG</footer>
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>WHATWG HTML Spec.</h2>
+    </hgroup>
+    <article>
+      <iframe data-src="http://www.whatwg.org/specs/web-apps/current-work/multipage/"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Evolution</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/evolution.jpg" alt="Description" title="Description">
+    </article>
+  </slide>
+
+
+  <slide class="quote">
+      <hgroup>
+        <h2>Weird evolution</h2>
+        <h3>"Do I look fat in this dress" API</h3>
+      </hgroup>
+    <article class="flexbox vleft">
+       <q>
+        The <b>canPlayType(type)</b> method must return the <b>empty string</b> if type is a type that the user agent knows it cannot render or is the type "application/octet-stream"; it must return <b>"probably"</b> if the user agent is confident that the type represents a media resource that it can render if used in with this audio or video element; and it must return <b>"maybe"</b> otherwise.
+      </q>
+      <div class="author">
+        <a href="http://dev.w3.org/html5/spec/media-elements.html#dom-navigator-canplaytype">W3C media elements spec</a>
+      </div>
+    </article>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>Chris Heilmann nightligthed this</li>
+        </ul>
+      </section>
+    </aside>
+
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(images/turtle.jpg)"></slide>
+
+  <slide>
+    <hgroup>
+      <h2>HTML5 is the new flash</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/starwars.png" alt="Description" title="Description">
+    </article>
+    <footer class="source">http://tooschee.com/</footer>
+
+     <aside class="note">
+      <section>
+        <ul>
+          <li>This is not exciting</li>
+          <li>We repeat the same mistakes with flash</li>
+        </ul>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>So where are we?</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/hypecycle.png" alt="Description" title="Description">
+      <footer class="source">http://en.wikipedia.org/wiki/Hype_cycle</footer>
+    </article>
+  </slide>
+
+
+
+  <slide class="segue dark nobackground">
+    <hgroup>
+      <h2>Today's browsers</h2>
+      <h3>How far are we?</h3>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Today's desktop browsers</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/browsers.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>Their usage</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <a href="http://gs.statcounter.com/">
+        <img src="images/stats.png" alt="Description" title="Description">
+      </a>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Platform features</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">What can we use today?</p>
+    </article>
+
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Thought experiment</h2>
+    </hgroup>
+
+    <ul class="build" style="margin-top: 50px; ">
+      <li>
+        <span style="margin-top: 150px; font-size: 50px; line-height: 1.2em">What if all browsers was updated to the newest version over night?</span>
+      </li>
+
+      <li>
+        <span class="build fade" style="display: block; margin-top: 150px; font-size: 50px; line-height: 1.2em"> What if all browsers would be auto-updating going forward?</span>
+      </li>
+    </ul>
+
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>CSS border-radius (November, 2004)</h2>
+    </hgroup>
+
+    <article>
+      <iframe src="http://caniuse.com/border-radius/embed/agents=desktop" style="margin-top: -20px;"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Native JSON (June, 2009)</h2>
+    </hgroup>
+
+    <article>
+      <iframe src="http://caniuse.com/json/embed/agents=desktop" style="margin-top: -20px;"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>CSS3 3D Transforms (2010)</h2>
+    </hgroup>
+    <article>
+      <iframe src="http://caniuse.com/css-transitions/embed/agents=desktop" style="margin-top: -20px;"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>HTML5 Drag&Drop (2010)</h2>
+    </hgroup>
+    <article>
+      <iframe src="http://caniuse.com/dragndrop/embed/agents=desktop" style="margin-top: -20px;"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>JavaScript typed Arrays (2011)</h2>
+    </hgroup>
+    <article>
+      <iframe src="http://caniuse.com/typedarrays/embed/agents=desktop" style="margin-top: -20px;"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Platform features</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">The web is evolving. Fast.</p>
+    </article>
+
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>Platform features</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Use them when it makes sense</p>
+    </article>
+
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <hgroup>
+      <h2>What about mobile?</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Facebook and HTML5</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/facebook-app.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>And it's problems...</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/facebook-nocss.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">and many others ...</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Said about HTML5</h2>
+    </hgroup>
+
+    <article>
+
+      <q style="display: block; padding-top: 80px; padding-bottom: 50px;">
+        ... When I'm introspective about the last few years I think the <b>biggest
+        mistake</b> that we made, as a company, is <b>betting too much on HTML5</b> as
+        opposed to native... <b>because it just wasn't there...</b>.
+      </q>
+
+      <div class="author">
+        Mark Zuckerberg<br>
+        Facebook
+      </div>
+
+    </article>
+
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">W3C Core Mobile Web Platform Community Group</p>
+    </article>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>groups use cases, scenarios</li>
+          <li>successful mobile development</li>
+        </ul>
+      </section>
+    </aside>
+
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Some of our problems</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Performance
+          <ul>
+            <li>FPS / GPU </li>
+          </ul>
+        </li>
+        <li>Assets
+          <ul>
+            <li>Unloading images</li>
+            <li>Compressed/uncompressed</li>
+          </ul>
+        </li>
+        <li>Caching/Storage
+          <ul>
+            <li>AppCache is unusable.</li>
+          </ul>
+        </li>
+        <li>Memory/GC
+          <ul>
+            <li>How much memory does an object allocate?</li>
+          </ul>
+        </li>
+        <li>Tooling
+          <ul>
+            <li>Debugging</li>
+            <li>Blackboxes</li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <hgroup>
+      <h2>Going forward</h2>
+      <h3></h3>
+    </hgroup>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>Also said about HTML5</h2>
+    </hgroup>
+
+    <article>
+
+      <q style="display: block; padding-top: 80px; padding-bottom: 50px;">
+        ... I'm actually, on <b>long-term</b>, really excited about it. One of the
+        things that's interesting is we actually have <b>more people</b> on a <b>daily basis</b>
+        using <b>mobile Web Facebook</b> than we have using our iOS or Android apps
+        combined. So <b>mobile Web is a big thing</b> for us.
+      </q>
+
+      <div class="author">
+        Mark Zuckerberg<br>
+        Facebook
+      </div>
+
+    </article>
+
+  </slide>
+
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">We are building (web) applications.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">There will be no "one browser".</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Let's drive the platform.</p>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <hgroup>
+      <h2>Our web tooling</h2>
+      <h3>We can do better.</h3>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Once upon a time</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/firebug.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Today</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/chrome.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Most developers live here</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/sublime.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>... or in Visual Studio</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/visualstudio.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">browser !== editor</p>
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>Fixing the symptom</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Browser extensions.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>One step closer</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/remote-debugging.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">What we need?</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Integration into our editors</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/visual-debugging.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>JetBrains WebStorm</h2>
+    </hgroup>
+    <article style="margin-top: 20px;">
+       <iframe height="200" src="http://www.youtube.com/embed/2N5XlqJYhIg" frameborder="0" allowfullscreen></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">It's our responsibiliy.</p>
+    </article>
+  </slide>
+
+  <slide class="thank-you-slide segue nobackground">
+    <article class="flexbox vleft">
+      <h2>Thanks.</h2>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+
+</slides>
+
+</body>
+</html>
